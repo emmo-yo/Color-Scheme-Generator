@@ -7,6 +7,7 @@ For this project the challenge were to use [The Color API](https://www.thecolora
 # Using
 * HTML
 * CSS
+* JavaScript
 * [Font Awesome icons](https://fontawesome.com/icons)
 * Figma design file provided by [Scrimba](https://scrimba.com/allcourses)
 * [The Color API](https://www.thecolorapi.com/)
