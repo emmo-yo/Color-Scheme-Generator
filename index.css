@@ -1,0 +1,172 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.main-content{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+nav{
+    grid-area: "header";
+    display: flex; 
+    background-color: #1F2937;
+    height: 90px;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+}
+
+.seed-color{
+    align-self: center;
+    height: 40px;
+    width: 60px;
+    background: #E5E5E5;
+    border: 0.5px solid #D1D5DB;
+}
+
+#seed-color-input{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.drop-down-meny{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 13px;
+    gap: 4px;
+}
+
+.btn{
+    font-family: 'Inter';
+    height: 40px;
+    color: #fff;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.drop-btn{
+    color: #D5D4D8;
+    background-color: #1F2937;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;  
+}
+
+option:checked { 
+    background-color: #679455; 
+    color: #fff;
+}
+
+.get-btn{
+    background: #3D4B60;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.light-btn{
+    background: #E5E5E5;
+    border: 1px solid #2B283A;
+    color: #1e232b;
+}
+
+.color-grid, footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.color-grid{
+    grid-template-rows: 70vh; 
+    align-self: stretch; 
+}
+
+footer{
+    background: #1F2937;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    bottom: 0;
+    padding: 1em 0 1em 0;
+    justify-self: stretch;
+    width: 100%;
+    color: #D5D4D8;
+}
+
+h3 {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.light-mode{
+    background: #FFFDFE;
+    color: #2B283A;
+}
+
+.toggle-btn{
+    position: fixed;
+    left: 1em;
+    top: 2.3em;
+}
+
+.fa {
+    font-size: 1.5rem;
+}
+
+.fa-toggle-off{
+    color: #fff;
+}
+
+.fa-toggle-on{
+    color: #000;
+}
+
+@media(min-height: 450px) {
+    .color-grid{
+        grid-template-rows: 80vh; 
+    }
+}
+
+@media(min-width: 900px) {
+    nav{
+        height: 100px;
+    }
+
+    .seed-color {
+        height: 60px;
+        width: 100px;
+    } 
+
+    .btn{
+        height: 60px;
+        width: 250px; 
+    }
+
+    .drop-btn{
+        padding: 0 0.75em 0 0.75em;
+        margin: 0 4em 0 4em;
+    }
+
+    .get-btn, h3, .drop-btn{
+        font-size: 1.125rem;
+        letter-spacing: 1.3;
+    }
+
+}

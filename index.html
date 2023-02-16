@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="main-content">
+            <nav id="nav-id">
+                <div class="seed-color">
+                    <input type="color" id="seed-color-input"/>
+                </div>
+                <div class="drop-down-meny">
+                    <select class="btn drop-btn" id="choose-scheme">
+                        <option value="monochrome" selected="selected">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome dark</option>
+                        <option value="monochrome-light">Monochrome light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>       
+                    </select>  
+                </div>
+                <button class="btn get-btn" id="get-color">Get color scheme</button>
+                <div class="toggle-btn">
+                    <i class="fa fa-toggle-off" id="toggle-btn"></i>
+                </div>
+            </nav>
+            <main class="color-grid" id="color-grid">
+            </main>
+            <footer class="footer-grid" id="footer-grid">
+            </footer>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
